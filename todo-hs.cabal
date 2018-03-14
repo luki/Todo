@@ -23,6 +23,6 @@ executable todo-hs
                        mongoDB <= 2.3.0.4,
                        bson-mapping <= 0.1.5.1,
                        text <= 1.2.3.0,
-                       time -any
+                       happstack-lite <= 7.3.6
   hs-source-dirs:      src
   default-language:    Haskell2010

@@ -1,9 +1,13 @@
 {-# LANGUAGE TemplateHaskell #-}
 
 module Main where
-import Database.MongoDB
+import Database.MongoDB             ( Field ( (:=) )
+                                    , Value ( Bool
+                                            , String
+                                            )
+                                    )
 import Database.MongoDB.Connection  (host, connect)
-import Database.MongoDB.Query       (access, master, insertMany)
+import Database.MongoDB.Query       (access, master, insertMany, Action)
 import Data.Data                    (Typeable)
 import Data.Bson.Mapping
 import Data.Text                    (pack, Text)
